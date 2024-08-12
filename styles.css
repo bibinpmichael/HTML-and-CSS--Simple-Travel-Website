@@ -1,0 +1,255 @@
+/* 
+  Resetting the default margin for the body to avoid unintended spacing. 
+  Center-aligning text and setting the default font color to a dark shade (#111827).
+  Applying 'Spinnaker' as the default font family, falling back to sans-serif if unavailable.
+*/
+body {
+  margin: 0;
+  text-align: center;
+  color: #111827;
+  font-family: 'Spinnaker', sans-serif;
+}
+
+/* 
+    Setting a maximum width for the main container to ensure content doesn't stretch too wide on large screens.
+    Centering the container within the viewport using auto margins.
+  */
+/* .main-container {
+  max-width: 2000px;
+  margin: 0 auto;
+} */
+
+/* 
+    Ensuring all images take up 100% of their parent container's width to be fully responsive.
+  */
+img {
+  width: 100%;
+}
+
+/*****************/
+/* HERO SECTION */
+/*****************/
+
+/* 
+    Styling the hero section with a background image that covers the entire area.
+    The background image is centered, doesn't repeat, and scales to cover the section completely.
+    The height is set to 70% of the viewport height (70vh).
+    Flexbox is used to center the content both horizontally and vertically.
+  */
+.hero {
+  background-image: url('images/kuttanadu-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+    Styling the main title in the hero section with a large font size and bottom margin for spacing.
+  */
+.hero-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* 
+    Styling the description text in the hero section with a medium font size and green background.
+    Adding padding for better readability and a margin to separate it from other elements.
+  */
+.hero-description {
+  font-size: 18px;
+  background: #10b981;
+  padding: 5px;
+  margin: 0 10px 0 10px;
+}
+
+/* 
+    Applying a light color to the hero title and description text.
+    Adding a subtle text-shadow for a glowing effect that enhances readability against the background image.
+  */
+.hero-title,
+.hero-description {
+  color: #e5e7eb;
+  text-shadow: 0 0 30px #065f46;
+}
+
+/*****************/
+/* ABOUT SECTION */
+/*****************/
+
+/* 
+    Creating the about section with centered content.
+    Flexbox is used to align content in a column and center it horizontally and vertically.
+    A margin of 20px is applied to separate it from surrounding elements.
+  */
+.about {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+    Styling the about section title with a large font size and removing any bottom margin.
+  */
+.about-title {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+/* 
+    Styling the about section description for readability.
+    Line height is increased to improve text spacing, and text is justified for a clean, even appearance.
+  */
+.about-description {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/*****************/
+/* ACTIVITY SECTION */
+/*****************/
+
+/* 
+    Setting a background color for the activities section with padding for spacing.
+    Adding a bottom margin to separate it from the next section.
+  */
+.activities {
+  background: #d1fae5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* 
+    Styling the activities section title with a large font size.
+    Adding top and bottom margins to separate the title from other content.
+  */
+.activities-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+/* 
+    Creating a flex container to arrange activities in a flexible layout.
+    The content is centered, wrapped if needed, and spaced with a gap of 30px between items.
+    A margin is applied to the section for additional spacing.
+  */
+.activities-flex {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* 
+    Setting a fixed width for each activity item to maintain consistent sizing.
+  */
+.activity {
+  width: 300px;
+}
+
+/* 
+    Styling the activity images with a solid border and rounded corners.
+    This enhances the visual appeal and separates images from the background.
+  */
+.activity-img {
+  border: 3px solid #065f46;
+  border-radius: 7px;
+}
+
+/* 
+    Styling the activity titles with a medium font size for prominence.
+  */
+.activity-title {
+  font-size: 18px;
+}
+
+/* 
+    Styling the activity descriptions with a smaller font size for readability.
+    Text is justified for clean alignment, and line height is increased for better spacing.
+  */
+.activity-description {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/*****************/
+/* GUIDE SECTION */
+/*****************/
+
+/* 
+    Styling the guide card with a green background and rounded corners.
+    A solid bottom border is added for visual emphasis.
+    The card has a maximum width to keep content centered and a margin to separate it from other sections.
+    Flexbox is used for layout, aligning content in rows or wrapping if necessary.
+    Padding is added for spacing inside the card.
+  */
+.guide-card {
+  background: #10b981;
+  border-radius: 5px;
+  border-bottom: 8px solid #065f46;
+  max-width: 600px;
+  margin: 50px auto;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 
+    Adding padding around the guide image and setting a fixed width to control its size.
+  */
+.guide-img {
+  padding: 10px;
+  width: 200px;
+}
+
+/* 
+    Styling the guide image with a solid border and rounded corners to match the overall design.
+  */
+.guide-img img {
+  border: 3px solid #065f46;
+  border-radius: 10px;
+}
+
+/* 
+    Setting a fixed width for the guide details section to ensure consistent layout.
+    Flexbox is used to arrange content in a column and center it.
+  */
+.guide-details {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+    Styling the guide description text with default margins removed and increased line height for readability.
+  */
+.guide-description {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/*****************/
+/* FOOTER SECTION */
+/*****************/
+
+/* 
+    Styling the footer section with a light background color and padding for spacing.
+    This creates a clean separation from the rest of the content.
+  */
+.footer {
+  background: #d1fae5;
+  padding: 10px;
+}
